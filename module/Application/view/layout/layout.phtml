@@ -30,24 +30,43 @@
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar" style = text-decorati></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath('img/zf2-logo.png') ?>" alt="Zend Framework 2"/>&nbsp;<?php echo $this->translate('Skeleton Application') ?></a>
+                    <a class="navbar-brand" href="<?php echo $this->url('home') ?>">&nbsp;<?php echo $this->translate('E-commerce') ?></a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
+                        <?php echo $this->navigation('navigation')->menu()->setUlClass('nav navbar-nav'); ?>
                     </ul>
+                                    <span class="navbar-text" style = float:right> <?php
+
+                                        if($user = $this->identity())
+                                        {
+                                            $role = $user->getRole();
+
+                                            if($role->getId() == 3)
+                                            {
+                                                echo '<span style=text-decoration:underline>'.$this->escapeHtml($user->getFirstName()).'</span> is logged in as an <span class="zf-green" style = font-size:14px> Employee.</span>';
+                                            }
+                                            else if($role->getId() == 2)
+                                            {
+                                                echo '<span style=text-decoration:underline>'.$this->escapeHtml($user->getFirstName()).'</span> is logged in as a <span class="zf-green" style = font-size:14px> Customer.</span>';
+                                            }
+
+                                        }
+                                        ?>
+                </span>
                 </div><!--/.nav-collapse -->
+
             </div>
         </nav>
         <div class="container">
             <?php echo $this->content; ?>
             <hr>
             <footer>
-                <p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+                <p>&copy; 2014 - E-commerce Web Application, Printing Services <?php echo $this->translate('All rights reserved.') ?></p>
             </footer>
         </div> <!-- /container -->
         <?php echo $this->inlineScript() ?>
