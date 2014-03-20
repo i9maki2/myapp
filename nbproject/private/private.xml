@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Applications/MAMP/htdocs/myapp/config/autoload/doctrineorm.local.php</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/vendor/coolcsn/csn-user/src/CsnUser/Form/RegistrationForm.php</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/config/application.config.php</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/vendor/coolcsn/csn-user/src/CsnUser/Form/LoginForm.php</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/vendor/coolcsn/csn-user/src/CsnUser/Controller/IndexController.php</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/vendor/coolcsn/csn-user/src/CsnUser/Controller/RegistrationController.php</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/vendor/coolcsn/csn-user/view/csn-user/registration/index.phtml</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/config/autoload/acl.global.php</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/module/Application/view/layout/layout.phtml</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/vendor/coolcsn/csn-user/src/CsnUser/Form/LoginFilter.php</file>
+            <file>file:/Applications/MAMP/htdocs/myapp/config/autoload/navigation.global.php</file>
+        </group>
+    </open-files>
+</project-private>
